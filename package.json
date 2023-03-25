@@ -1,0 +1,22 @@
+{
+  "name": "dependency_injection",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prestart": "yarn build",
+    "start": "node .",
+    "prebuild": "rm -rf dist",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.2",
+    "@types/node": "^18.15.9",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  }
+}
